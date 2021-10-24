@@ -1,11 +1,11 @@
 {
     "manifest_version" : 2,
-    "name": "Think Blink Launcher",
+    "name": "Think Blink",
     "description" : "Quick launch Think Blink Media",
     "version": "1.0.0",
-    "icons": {"128" : "ThinkBlink Icon.PNG" },
+    "icons": {"128" : "icon.png" },
     "browser_action": {
-        "deafult_icon": "ThinkBlink Icon.PNG",
+        "deafult_icon": "icon.png",
         "default_popup": "popup.html"
     },
     "permissions": ["activeTab"]
