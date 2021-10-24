@@ -1,106 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
 
-html, body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+*{
     margin: 0;
-    min-height: 180 px;
     padding: 0;
-    width: 400px;
-    height: 300px;
+    box-sizing: border-box;
+    
 }
 
-h1 {
-    font-family: 'Menlo', monospace;
-    font-size: 22px;
-    font-weight: 400;
+html, body{
+    background-color: rgb(217, 255, 242);
+    font-family: 'Karla', sans-serif;
     margin: 0;
-    color:cornflowerblue;
+    padding: 0;
+    min-height: 180px;
+    width: 300px;
+    height: 250px;
 }
 
-a:link, a:visited {
-    color:black;
-    outline:0;
-    text-decoration: none;;
-}
-
-img{
-    width: 30px;
-}
-
-.modal-header {
-    align-items: center;
-    border-bottom: 0.5px solid cornflowerblue;
-}
-
-.modal-content {
-    padding: 0 22px;
-    border-bottom: 0.5px solid cornflowerblue;
-}
-
-.modal-icons {
-    border-top: 0.5px solid yellow;
-    height: 50px;
+.content{
     width: 100%;
-}
-.logo {
-padding: 16px;
-}
-
-.logo-icon {
-    vertical-align: text-bottom;
-    margin-right: 12px;
-}
-
-.version {
-    color: #444;
-    font-size: 18px;
-}
-
-.flex-container {
+    height: 60 vh;
+    font-size: 3rem;
     display: flex;
-    justify-content: space-between;
-    padding: 10px 22px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
 }
 
-#github:hover, #reset-button:hover, #start-button:hover  {
+.content #seconds{
+    width: 250px;
+    font-size: 2rem;
+    padding: 1rem;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 3px solid black;
+    color: black}
+
+.btn{
+    /* background-color: grey;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.8rem 1.7rem;
+    font-size: 1.2rem;
+    font-weight: 700; */
+    font-family: 'Karla', sans-serif;
+    color: white; 
+    border: none;
+    border-radius: 40px;
+    padding: 8px 21px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover, #github:hover {
     opacity: 0.4;
 }
 
-#github .fa {
-    font-size: 40px;
-    color: #2f5876;
-}
-
-#start-button {
-    background-color: #4CAF50; 
-    color: white; 
-    border: none;
-    border-radius: 40px;
-    padding: 8px 21px;
-    font-size: 15px;
-}
-
-#reset-button {
-    background-color: cornflowerblue; 
-    color: white; 
-    border: none;
-    border-radius: 40px;
-    padding: 8px 21px;
-    font-size: 15px;
-}
-
-#github{
-    display: flex;
-    margin: 10px;
-    justify-content: right;
-    opacity: 1;
-    transition: opacity 0.2s ease-in-out;
-}
-
-.center {
+.center{
     display: flex;
     margin: 10px;
     justify-content: center;
     align-items: center;
 }
 
+#start{
+    background-color: rgb(50, 110, 46); 
+}
+
+#stop{
+    background-color: rgb(143, 34, 34);
+}
+
+#submit{
+    background-color: rgb(0, 0, 0);
+}
+
+#start, #stop, #continue{
+    display: none;
+}
+   /* background: linear-gradient(to left top, black, white);
+*/
+#seconds{
+	width: 150px;
+	background: none;
+	outline: none;
+	border: none;
+	border-bottom: 4px solid #fff;
+	padding: 1rem;
+	font-size: 0.2rem;
+	color: rgb(80, 177, 161);
+}
+
+#seconds::placeholder{
+	color: rgb(75, 93, 124);
+    
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+    opacity: 0.4;
+}
+
+#github{
+    font-size: 25px;
+    display: flex;
+    margin: 10px;
+    justify-content: right;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;  
+}
+
+.version {
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+    margin-right: 7px;
+}
+
+.fa {
+    font-size: 25px;
+}
+
+
+h1 {
+    /* font-family: 'Menlo', monospace; */
+    font-size: 27px;
+    font-weight: 700;
+    margin: 0;
+    color:rgb(0, 0, 0);;
+}
+
+a:link, a:visited {
+    color:black;
+    outline:0;
+    text-decoration: none;
+}
+
+
+img{
+    width: 40px;
+    padding-right: 5px;
+}
+
+.modal-header {
+    padding: 10px;
+    border-bottom: 0.8px solid rgb(0, 0, 0);
+}
+
+/* .modal-content {
+    padding: 0 22px;
+    border-bottom: 0.5px solid rgb(0, 0, 0);
+} */
+
+/* .modal-icons {
+    border-top: 0.5px solid yellow;
+    height: 50px;
+    width: 100%;
+} */
+
+/* .logo {
+    padding: 16px;
+} */
+/* 
+.logo-icon {
+    vertical-align: text-bottom;
+    margin-right: 12px;
+} */
+
+
+.flex-container {
+display: flex;
+justify-content: space-between;
+padding: 10px 22px;
+}
+
+.flex {
+opacity: 1;
+transition: opacity 0.2s ease-in-out;
+width: 120px;
+padding: 8px;
+}
+
+.flex:hover {
+opacity: 0.4;
+}
