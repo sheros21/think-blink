@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Think Blink Launcher</title>
+    <title>Think Blink</title>
     <link 
         href="http://fonts.googleapis.com/css?family=Open+Sans"
         rel="stylesheet"
@@ -13,6 +13,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     -->
+    <link
+        rel="stylesheet" 
+        type="text/css" 
+        href="style.css">
+
     <link
     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     rel="stylesheet"
@@ -104,13 +109,26 @@
 <body>
     <div class="modal-header">
         <h1 class="logo">
-            <img src="icon.png"> Think Blink Launcher 
+            <img src="icon.png"> Think Blink 
             <span class="version">(1.0.0)</span>
         </ht>
     </div>
-    <div class="modal-content">
-        <p>Easily access Think Blink Media content</p>
+    <div class="content">
+        <div class="counter"></div>
+        <input type="number" id="seconds" placeholder="Seconds">
+        <div class="buttons">
+    		<button class="btn start" id="start" value="1" onclick="check(this)">Start</button>
+    		<button class="btn start" id="continue" value="1" onclick="check(this)">Continue</button>
+    		<button class="btn stop" id="stop" value="0" onclick="check(this)">Stop</button>
+    		<button class="btn start" id="submit" onclick="subm()">Submit</button>
+        </div>
     </div>
+    <script type="text/javascript"> src="popup.js"</script>
+    <div class="modal-content">
+    </div>
+
+
+
     <div class="flex">
         <a href="https://github.com/sheros21/ThinkBlink" target="_blank">
             <i class="fa fa-github"></i>
@@ -119,3 +137,4 @@
     <script src="popup.js"></script>
 </body> 
 </html>
+
