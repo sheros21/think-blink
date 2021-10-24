@@ -1,0 +1,106 @@
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    min-height: 180 px;
+    padding: 0;
+    width: 400px;
+    height: 300px;
+}
+
+h1 {
+    font-family: 'Menlo', monospace;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+    color:cornflowerblue;
+}
+
+a:link, a:visited {
+    color:black;
+    outline:0;
+    text-decoration: none;;
+}
+
+img{
+    width: 30px;
+}
+
+.modal-header {
+    align-items: center;
+    border-bottom: 0.5px solid cornflowerblue;
+}
+
+.modal-content {
+    padding: 0 22px;
+    border-bottom: 0.5px solid cornflowerblue;
+}
+
+.modal-icons {
+    border-top: 0.5px solid yellow;
+    height: 50px;
+    width: 100%;
+}
+.logo {
+padding: 16px;
+}
+
+.logo-icon {
+    vertical-align: text-bottom;
+    margin-right: 12px;
+}
+
+.version {
+    color: #444;
+    font-size: 18px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 22px;
+}
+
+#github:hover, #reset-button:hover, #start-button:hover  {
+    opacity: 0.4;
+}
+
+#github .fa {
+    font-size: 40px;
+    color: #2f5876;
+}
+
+#start-button {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none;
+    border-radius: 40px;
+    padding: 8px 21px;
+    font-size: 15px;
+}
+
+#reset-button {
+    background-color: cornflowerblue; 
+    color: white; 
+    border: none;
+    border-radius: 40px;
+    padding: 8px 21px;
+    font-size: 15px;
+}
+
+#github{
+    display: flex;
+    margin: 10px;
+    justify-content: right;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.center {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
